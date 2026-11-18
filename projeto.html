@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto | Victoria Gabrielle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Lacinho reutilizável -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="bow" viewBox="0 0 64 40">
+        <path d="M32 20C24 6 8 2 4 10c-3 7 6 18 28 10Z" fill="currentColor" />
+        <path d="M32 20C40 6 56 2 60 10c3 7-6 18-28 10Z" fill="currentColor" />
+        <path
+          d="M30 22 20 38M34 22l10 16"
+          stroke="currentColor"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+        <circle cx="32" cy="20" r="5.5" fill="#fff" fill-opacity=".55" />
+      </symbol>
+    </svg>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="container nav">
+        <a href="index.html" class="nav__logo">
+          <svg class="bow"><use href="#bow" /></svg>Victoria Gabrielle
+        </a>
+        <div class="nav__links">
+          <a href="index.html#about">Sobre</a>
+          <a href="index.html#services">Serviços</a>
+          <a href="index.html#portfolio">Trabalhos</a>
+          <a href="#contact" class="btn btn--solid">Contato</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--==================== TOPO DO PROJETO ====================-->
+      <section class="project-hero">
+        <div class="container">
+          <a href="index.html#portfolio" class="back-link"
+            >← Voltar para os trabalhos</a
+          >
+          <span class="project-tag" id="p-categoria"></span>
+          <h1 id="p-titulo">Carregando projeto...</h1>
+          <div class="project-meta">
+            <div><strong>Cliente:</strong> <span id="p-cliente"></span></div>
+            <div><strong>Ano:</strong> <span id="p-ano"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== DETALHES E GALERIA ====================-->
+      <section class="section">
+        <div class="container">
+          <div class="project-story">
+            <div class="story-box">
+              <svg class="bow"><use href="#bow" /></svg>
+              <h2>O Desafio</h2>
+              <p id="p-desafio"></p>
+            </div>
+            <div class="story-box">
+              <svg class="bow"><use href="#bow" /></svg>
+              <h2>A Solução</h2>
+              <p id="p-solucao"></p>
+            </div>
+          </div>
+
+          <h2 class="section__title" style="margin-top: 4rem">
+            Peças do projeto
+          </h2>
+          <p class="section__lead">
+            Confira os detalhes visuais desenvolvidos para este trabalho.
+          </p>
+
+          <div class="project-gallery" id="p-galeria"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTATO ====================-->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="contact__card">
+            <h2 class="section__title">Gostou deste resultado?</h2>
+            <p>Conte sobre o seu projeto e eu respondo em até 1 dia útil.</p>
+            <div class="contact__links">
+              <a
+                class="btn btn--solid"
+                href="https://wa.me/5515997885794"
+                target="_blank"
+                rel="noopener"
+                >WhatsApp</a
+              >
+              <a
+                class="btn btn--line"
+                href="mailto:victoriagabriellecamargo@email.com"
+                >E-mail</a
+              >
+              <a
+                class="btn btn--line"
+                href="https://instagram.com/_.yuyuki"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== RODAPÉ ====================-->
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Victoria Gabrielle. Feito com carinho e um
+        laço.
+      </p>
+    </footer>
+
+    <script src="assets/js/projetos.js"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

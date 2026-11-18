@@ -1,86 +1,403 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victoria Gabrielle | Designer</title>
+    <meta
+      name="description"
+      content="Design de identidade visual, social media e sites para marcas que querem ser lembradas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+  <body>
+    <!-- Lacinho reutilizável -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="bow" viewBox="0 0 64 40">
+        <path d="M32 20C24 6 8 2 4 10c-3 7 6 18 28 10Z" fill="currentColor" />
+        <path d="M32 20C40 6 56 2 60 10c3 7-6 18-28 10Z" fill="currentColor" />
+        <path
+          d="M30 22 20 38M34 22l10 16"
+          stroke="currentColor"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+        <circle cx="32" cy="20" r="5.5" fill="#fff" fill-opacity=".55" />
+      </symbol>
+    </svg>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="container nav">
+        <a href="#home" class="nav__logo"
+          ><svg class="bow"><use href="#bow" /></svg>Victoria Gabrielle</a
+        >
+        <div class="nav__links">
+          <a href="#about">Sobre</a>
+          <a href="#services">Serviços</a>
+          <a href="#portfolio">Trabalhos</a>
+          <a href="#contact" class="btn btn--solid">Contato</a>
+        </div>
+      </nav>
+    </header>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+    <main>
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <!-- Enfeites flutuantes -->
+        <svg class="bow float" style="left: 5%; top: 14%; width: 40px; --d: 8s">
+          <use href="#bow" />
+        </svg>
+        <svg
+          class="bow float"
+          style="left: 46%; bottom: 12%; width: 28px; --d: 11s; color: #9db9de"
+        >
+          <use href="#bow" />
+        </svg>
+        <span
+          class="float"
+          style="right: 6%; top: 10%; font-size: 34px; --d: 9s"
+          >♡</span
+        >
+        <span
+          class="float"
+          style="left: 38%; top: 8%; font-size: 22px; --d: 7s; color: #9db9de"
+          >✦</span
+        >
+        <span
+          class="float"
+          style="right: 30%; bottom: 8%; font-size: 26px; --d: 10s"
+          >♡</span
+        >
+        <div class="container home__grid">
+          <div>
+            <h1>
+              Design com <em>charme</em> para marcas que querem ser lembradas
+            </h1>
+            <p>
+              Sou designer e crio identidade visual, conteúdo para redes sociais
+              e sites que ajudam sua empresa a parecer profissional e a vender
+              mais.
+            </p>
+            <div class="home__cta">
+              <a href="#portfolio" class="btn btn--solid">Ver trabalhos</a>
+              <a href="#contact" class="btn btn--line">Pedir orçamento</a>
+            </div>
+          </div>
+          <div class="home__frame">
+            <svg class="bow bow--big"><use href="#bow" /></svg>
+            <div class="home__photo">
+              <img src="assets/img/VictoriaGabrielle.webp" alt="Victoria Gabrielle">
+              
+            </div>
+          </div>
+            <!-- Figurinhas (PNG transparente). Se o arquivo não existir, some sozinha. -->
+            <img
+              class="sticker"
+              src="assets/stickers/sticker1.png"
+              alt=""
+              style="--w: 120px; --r: -10deg; left: -50px; bottom: 30px"
+              onerror="this.remove()"
+            />
+            <img
+              class="sticker"
+              src="assets/stickers/sticker2.png"
+              alt=""
+              style="--w: 100px; --r: 12deg; right: -40px; top: 60px"
+              onerror="this.remove()"
+            />
+          </div>
+        </div>
+      </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+      <!--==================== FAIXA ANIMADA ====================-->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span
+            >Identidade visual ♡ Social media ♡ Sites ♡ Landing pages ♡ Sistemas
+            ♡
+          </span>
+          <span
+            >Identidade visual ♡ Social media ♡ Sites ♡ Landing pages ♡ Sistemas
+            ♡
+          </span>
+        </div>
+      </div>
 
-            </section>
+     <!--==================== SOBRE ====================-->
+      <section class="about section" id="about">
+        <div class="container about__grid">
+          <div>
+            <h2 class="section__title">Olá, eu sou a Victoria</h2>
+            <p>
+              Sou graduanda em <strong>Ciência da Computação na UFSCar</strong> e
+              apaixonada pelo encontro entre tecnologia e criação visual. Ao longo
+              da faculdade e da minha atuação em empresa júnior, descobri no
+              design e no desenvolvimento web um talento que venho aperfeiçoando a
+              cada novo projeto.
+            </p>
+            <p>
+              Meu objetivo é ajudar pequenos negócios, profissionais autônomos e
+              marcas locais a terem uma presença digital bonita, ágil e
+              profissional — do post no Instagram ao site no ar.
+            </p>
+            <p>
+              Por estar na universidade e em fase de expansão de portfólio,
+              consigo oferecer <strong>orçamentos super acessíveis</strong>, sem
+              custos de grandes agências, mas com todo o cuidado técnico,
+              praticidade e dedicação que a sua marca merece.
+            </p>
+          </div>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+          <div class="about__numbers">
+            <div>
+              <strong>UFSCar</strong>Ciência da Computação
+            </div>
+            <div>
+              <strong>2 em 1</strong>Design + Código no mesmo lugar
+            </div>
+            <div>
+              <strong>Acessível</strong>Orçamento viável e justo
+            </div>
+            <div>
+              <strong data-count="100" data-suffix="%">100%</strong>Feito sob
+              medida e com capricho
+            </div>
+          </div>
+        </div>
+      </section>
 
-            </section>
+      <!--==================== SERVIÇOS ====================-->
+      <section class="services section" id="services">
+        <div class="container">
+          <h2 class="section__title">O que eu faço por sua marca</h2>
+          <p class="section__lead">Do começo da identidade até o site no ar.</p>
+          <div class="services__grid">
+            <article class="service">
+              <svg class="bow"><use href="#bow" /></svg>
+              <h3>Identidade visual</h3>
+              <p>
+                Logo, paleta, tipografia e manual da marca para você ter um
+                visual consistente em tudo.
+              </p>
+            </article>
+            <article class="service">
+              <svg class="bow"><use href="#bow" /></svg>
+              <h3>Social media</h3>
+              <p>
+                Templates e artes para feed, stories e campanhas, prontos para
+                você postar.
+              </p>
+            </article>
+            <article class="service">
+              <svg class="bow"><use href="#bow" /></svg>
+              <h3>Sites e landing pages</h3>
+              <p>
+                Páginas rápidas e responsivas que levam o cliente direto para o
+                seu WhatsApp ou formulário.
+              </p>
+            </article>
+            <article class="service">
+              <svg class="bow"><use href="#bow" /></svg>
+              <h3>Sistemas simples</h3>
+              <p>
+                Formulários, painéis e pequenas automações em JavaScript e PHP
+                para o seu dia a dia.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+      <!--==================== PORTFÓLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <h2 class="section__title">Trabalhos selecionados</h2>
+          <p class="section__lead">
+            Alguns projetos recentes. Clique para ver o caso completo.
+          </p>
+          <div class="portfolio__grid">
+            <a href="projeto.html?id=beets-filmes" class="work">
+              <div class="work__img">
+                <img
+                  src="assets/img/beets-capa.png"
+                  alt="Beets Jr."
+                  onerror="this.remove()"
+                />
+                Top 8 Filmes Tech
+              </div>
+              <div class="work__info">
+                <h3>Beets Jr. — UFSCar</h3>
+                <span>Social Media & Conteúdo</span>
+                <p>
+                  Carrossel interativo com estética retrô para engajar
+                  estudantes de tecnologia.
+                </p>
+              </div>
+            </a>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+            <a href="projeto.html?id=ceavo-hortifruti" class="work">
+              <div class="work__img">
+                <img
+                  src="assets/img/ceavo-capa.png"
+                  alt="CEAVO Hortifruti"
+                  onerror="this.remove()"
+                />
+                CEAVO Hortifruti
+              </div>
+              <div class="work__info">
+                <h3>Post Instagram — CEAVO</h3>
+                <span>Social media</span>
+                <p>
+                  Peças para redes sociais conectando alimentação natural e
+                  rotina de treinos.
+                </p>
+              </div>
+            </a>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+            <a href="projeto.html?id=sistemas-web" class="work">
+              <div class="work__img">
+                <img
+                  src="assets/img/sistemas-capa.png"
+                  alt="Sistemas e Sites"
+                  onerror="this.remove()"
+                />
+                Sistemas & Sites
+              </div>
+              <div class="work__info">
+                <h3>Sistemas & Landing Pages</h3>
+                <span>Site & Front-end</span>
+                <p>
+                  Páginas rápidas e sistemas sob medida para organizar o
+                  atendimento de negócios.
+                </p>
+              </div>
+            </a>
 
-            </section>
+            <a href="projeto.html?id=climatizacao" class="work">
+              <div class="work__img">
+                <img
+                  src="assets/img/ar-capa.png"
+                  alt="Panfletos e Logo"
+                  onerror="this.remove()"
+                />
+                Logo & Panfletos
+              </div>
+              <div class="work__info">
+                <h3>Panfletos e Divulgação</h3>
+                <span>Identidade visual & Venda</span>
+                <p>
+                  Criação de logo e material impresso para captação de clientes
+                  locais.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+      <!--==================== PROCESSO ====================-->
+      <section class="process section" style="padding-top: 0">
+        <div class="container">
+          <h2 class="section__title">Como trabalhamos juntos</h2>
+          <p class="section__lead">
+            Um caminho simples, com você participando de cada etapa.
+          </p>
+          <div class="steps">
+            <div class="step">
+              <h3>Conversa</h3>
+              <p>
+                Entendo seu negócio, seu público e o que você quer alcançar.
+              </p>
+            </div>
+            <div class="step">
+              <h3>Proposta</h3>
+              <p>
+                Você recebe escopo, prazo e valor, tudo combinado antes de
+                começar.
+              </p>
+            </div>
+            <div class="step">
+              <h3>Criação</h3>
+              <p>
+                Apresento as ideias, ajustamos juntos e finalizo os arquivos.
+              </p>
+            </div>
+            <div class="step">
+              <h3>Entrega</h3>
+              <p>Você recebe tudo organizado e pronto para usar e publicar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
+      <!--==================== DEPOIMENTOS ====================-->
+      <section class="testimonial section" id="experience">
+        <div class="container">
+          <h2 class="section__title center">Onde já atuei</h2>
+          <div class="quotes" style="margin-top: 2rem">
+            <blockquote class="quote">
+              <p>Design de posts para Instagram</p>
+              <footer>Trainee na Beets jr, UFSCar</footer>
+            </blockquote>
+            <blockquote class="quote">
+              <p>Posts e artes para as redes sociais</p>
+              <footer>CEAVO Hortifruti</footer>
+            </blockquote>
+            <blockquote class="quote">
+              <p>Logo e panfleto para instalação de ar-condicionado</p>
+              <footer>Projeto para negócio familiar</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
 
-            </section>
-        </main>
+      <!--==================== CONTATO ====================-->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="contact__card">
+            <h2 class="section__title">Vamos criar algo bonito?</h2>
+            <p>Conte sobre o seu projeto e eu respondo em até 1 dia útil.</p>
+            <div class="contact__links">
+              <!-- Troque o número (55 + DDD + número, sem espaços) e os links -->
+              <a
+                class="btn btn--solid"
+                href="https://wa.me/5515997885794"
+                target="_blank"
+                rel="noopener"
+                >WhatsApp</a
+              >
+              <a
+                class="btn btn--line"
+                href="mailto:victoriagabriellecamargo@email.com"
+                >E-mail</a
+              >
+              <a
+                class="btn btn--line"
+                href="https://instagram.com/_.yuyuki"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
+    <!--==================== RODAPÉ ====================-->
+    <footer class="footer">
+      <p>© <span id="year"></span> Seu Nome. Feito com carinho e um laço.</p>
+    </footer>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
