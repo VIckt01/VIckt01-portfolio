@@ -9,12 +9,12 @@ const PROJETOS = {
     solucao:
       "Desenvolvi um carrossel misturando estética de colagem de papel rasgado, elementos retrô dos anos 90 e referências da cultura geek e IA (O Jogo da Imitação, A Rede Social, Matrix, Her, Hackers e Wall-E).",
     galeria: [
-      "assets/img/Beetsjr1.png",
-      "assets/img/Beetsjr2.png",
-      "assets/img/Beetsjr3.png",
-      "assets/img/Beetsjr4.png",
-      "assets/img/Beetsjr5.png",
-      "assets/img/Beetsjr6.png",
+      "assets/img/BeetsJr1.png",
+      "assets/img/BeetsJr2.png",
+      "assets/img/BeetsJr3.png",
+      "assets/img/BeetsJr4.png",
+      "assets/img/BeetsJr5.png",
+      "assets/img/BeetsJr6.png",
     ],
   },
   "ceavo-hortifruti": {
@@ -27,12 +27,12 @@ const PROJETOS = {
     solucao:
       "Composição visual que divide a peça entre a identidade verde vibrante da marca e fotografia de lifestyle esportivo com luz natural, destacando a chamada de forma rápida e direta com receitas deliciosas para o dia a dia e um segundo carrossel com a temática halloween.",
     galeria: [
-        "assets/img/CEAVO1.png",
-        "assets/img/CEAVO5.png",
-        "assets/img/CEAVO4.png",
-        "assets/img/CEAVO3.png",
-        "assets/img/CEAVO2.png",
-        "assets/img/1.png",
+      "assets/img/CEAVO1.png",
+      "assets/img/CEAVO5.png",
+      "assets/img/CEAVO4.png",
+      "assets/img/CEAVO3.png",
+      "assets/img/CEAVO2.png",
+      "assets/img/1.png",
     ],
   },
   "sistemas-web": {
