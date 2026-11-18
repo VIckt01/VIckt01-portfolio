@@ -15,6 +15,7 @@ const PROJETOS = {
       "assets/img/BeetsJr4.png",
       "assets/img/BeetsJr5.png",
       "assets/img/BeetsJr6.png",
+      "assets/img/BeetsJr7.png",
     ],
   },
   "ceavo-hortifruti": {
@@ -27,7 +28,7 @@ const PROJETOS = {
     solucao:
       "Composição visual que divide a peça entre a identidade verde vibrante da marca e fotografia de lifestyle esportivo com luz natural, destacando a chamada de forma rápida e direta com receitas deliciosas para o dia a dia e um segundo carrossel com a temática halloween.",
     galeria: [
-      "assets/img/CEAVO1.png",
+      "assets/img/Ceavo1.png",
       "assets/img/CEAVO5.png",
       "assets/img/CEAVO4.png",
       "assets/img/CEAVO3.png",
@@ -44,7 +45,7 @@ const PROJETOS = {
       "Pequenos negócios muitas vezes perdem vendas por não terem uma página profissional ou ferramentas simples para organizar pedidos, formulários e cadastros.",
     solucao:
       "Criação de páginas leves, responsivas e personalizadas em HTML, CSS e JavaScript que levam o cliente direto ao WhatsApp ou facilitam a rotina da empresa.",
-    galeria: ["assets/img/sistemas-1.png"],
+    galeria: ["assets/img/1.png"],
   },
   climatizacao: {
     titulo: "Identidade & Panfletos de Serviços",
@@ -55,11 +56,10 @@ const PROJETOS = {
       "Transmitir confiança e profissionalismo no serviço de instalação e manutenção de ar-condicionado para atrair clientes da região.",
     solucao:
       "Desenvolvimento de logotipo limpo e panfleto direto ao ponto, destacando os serviços principais e facilitando o contato imediato pelo WhatsApp.",
-    galeria: ["assets/img/ar-1.png"],
+    galeria: ["assets/img/1.png"],
   },
 };
 
-// Preenche a página projeto.html automaticamente
 (() => {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
